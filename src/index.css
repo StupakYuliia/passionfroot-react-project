@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(./assets/fonts/Roboto-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'DM Sans';
+  src: url(./assets/fonts/DMSans-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-bg: #fff;
+  --color-text: #1B1C1D;
+  --color-accent: #FF9966;
+
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'DM Sans', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li a{
+  text-decoration: none;
+  color: #222;
+}
