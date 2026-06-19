@@ -1,7 +1,5 @@
 import Button from "../Button/Button";
-import classes from '../Header/Header.module.css'
-import { useState } from "react";
-import Modal from "../Modal/Modal";
+import classes from '../Header/Header.module.css';
 
 export default function Header() {
     const menuItems = [
@@ -10,8 +8,6 @@ export default function Header() {
         {id:3, title:'Resources', url:'#'},
         {id:4, title:'Login', url:'#'},
     ];
-
-    const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
         <header className={classes.header}>
@@ -25,9 +21,8 @@ export default function Header() {
                 ))}            
             </ul>
             </nav>
-            <Button onClick={() => setIsModalOpen(true)}>Get access</Button>
+            <Button>Get access</Button>
             </div>
-            <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}/>
         </header>
     )
 }

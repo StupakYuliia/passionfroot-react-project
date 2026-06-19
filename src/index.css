@@ -14,12 +14,22 @@
 }
 
 :root {
+  
   --color-bg: #fff;
   --color-text: #1B1C1D;
   --color-accent: #FF9966;
+  --color-active: #ff722c;
+  --color-header-link: #222;
+  --color-bg-header: #F5F3EA;
 
   --font-primary: 'Roboto', sans-serif;
   --font-secondary: 'DM Sans', sans-serif;
+  
+  --fs-body: 1.6rem;
+  --fs-h1-desktop: 9.6rem;
+  --fs-h1-mobile: 5rem;
+  --fs-button: 1.6rem;
+  --fs-lg: 2rem;
 }
 
 html {
@@ -38,7 +48,7 @@ body {
   font-family: var(--font-primary);
   background-color: var(--color-bg);
   color: var(--color-text);
-  font-size: 1.6rem;
+  font-size: var(--fs-body);
 }
 
 ul {
@@ -47,5 +57,16 @@ ul {
 
 li a{
   text-decoration: none;
-  color: #222;
+  color: var(--color-header-link);
+}
+
+h1 {
+  font-size: var(--fs-h1-desktop);
+  font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: var(--fs-h1-mobile);
+  }
 }

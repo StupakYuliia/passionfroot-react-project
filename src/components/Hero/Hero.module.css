@@ -1,0 +1,106 @@
+.hero {
+    padding: 23.2rem 0 18.6rem;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 4rem;
+    left: 16rem;
+    width: 27rem;
+    height: 18rem;
+    background-image: url(../../assets/img/hero-payouts.png);
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 8.8rem;
+    right: 33.4rem;
+    width: 15.2rem;
+    height: 9.3rem;
+    background-image: url(../../assets/img/hero-cashflow-chart.png)
+}
+
+.hero__wrapper {
+    position: relative;
+    max-width: 69rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero__wrapper::before {
+    content: '';
+    position: absolute;
+    bottom: 166px;
+    left: -190px;
+    width: 20.8rem;
+    height: 14.5rem;
+    background-image: url(../../assets/img/hero-calendar-slots.png);
+}
+
+.hero__wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    right: -250px;
+    width: 20.6rem;
+    height: 19.1rem;
+    background-image: url(../../assets/img/hero-workflow-steps.png);
+}
+
+.hero__title {
+    line-height: 1.008;
+    margin-bottom: 3.2rem;
+}
+
+.hero__text {
+    font-family: var(--font-secondary);
+    max-width: 53.2rem;
+    margin-bottom: 2.4rem;
+    line-height: 1.55;
+    font-size: var(--fs-lg);
+}
+
+.hero__btn {
+    background-color: var(--color-accent);
+}
+
+.hero__btn:hover {
+    --color-hover: #F5F3EA;
+    background-color: var(--color-hover);
+}
+
+.hero__btn:active {
+    --color-active: #dcdbd7;
+    background-color: var(--color-active);
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        padding: 232px 0 90px;
+    }
+
+    .hero__title {
+        margin-bottom: 24px;
+    }
+
+    .hero__text{
+        font-size: var(--fs-body);
+    }
+
+    .hero::before {
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .hero::after,
+    .hero__wrapper::after,
+    .hero__wrapper::before {
+        content: none;
+    }
+}
