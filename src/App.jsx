@@ -1,6 +1,7 @@
 import './App.css'
 import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
+import Audience from './components/Audience/Audience'
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <Header/>
       <main>
         <Hero/>
+        <Audience/>
       </main>
     </div>
   )  

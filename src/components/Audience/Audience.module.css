@@ -1,0 +1,43 @@
+.audience {
+    margin-bottom: 9.4rem;
+}
+
+.audience__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.audience__title {
+    max-width: 37rem;
+    text-align: center;
+    margin-top: 9.4rem;
+}
+
+.audience__item {
+    font-size: 5.6rem;
+    margin-bottom: 3rem;
+}
+
+.audience__item:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+    .audience {
+        margin-bottom: 90px;
+    }
+
+    .audience__wrapper {
+        flex-direction: column;
+    }
+
+    .audience__title{
+        margin: 0 0 3rem;
+    }
+
+    .audience__item {
+        font-size: 3.6rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+}

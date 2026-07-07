@@ -9,7 +9,7 @@ export default function Hero() {
     return (
         <section className={classes.hero}>
             <div className={`container ${classes.hero__wrapper}`}>
-                <h1 className={classes.hero__title}>Where creators do business</h1>
+                <h1 className={`${classes.hero__title} title-hero`}>Where creators do business</h1>
                 <p className={classes.hero__text}>Passionfroot lets you handle sponsorships, collaboration requests, bookings, and payments – in one single place. Stop feeling overwhelmed by the opportunities. Start seizing them.</p>
                 <Button onClick={() => setIsModalOpen(true)} className={classes.hero__btn}>Get access</Button>
             </div>

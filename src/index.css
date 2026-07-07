@@ -60,13 +60,13 @@ li a{
   color: var(--color-header-link);
 }
 
-h1 {
+.title-hero {
   font-size: var(--fs-h1-desktop);
   font-weight: 400;
 }
 
 @media (max-width: 1024px) {
-  h1 {
+  .title-hero {
     font-size: var(--fs-h1-mobile);
   }
 }
