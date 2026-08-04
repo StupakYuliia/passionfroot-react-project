@@ -1,16 +1,24 @@
-# React + Vite
+# 🍇 Passionfroot Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Навчальний Landing Page проєкт для платформи creators-маркетингу Passionfroot. Проєкт розроблено на React із застосуванням компонентного підходу, модульних стилів та динамічної логіки взаємодії з користувачем.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠 Технології та інструменти
 
-## React Compiler
+* React (JSX, Hooks: useState, useEffect)
+* Vite (збірка проєкту)
+* CSS Modules (*.module.css) + Global CSS (index.css)
+* JavaScript (ES6+)
+* Git / GitHub
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Реалізований функціонал та структура
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🧩 Компоненти та секції:
+1. Header — верхня панель навігації сайту.
+2. Hero Section — головний екран проєкту із заголовком, описом та кнопкою виклику цільової дії (CTA).
+3. **Audience Section (Creators)** — секція цільової аудиторії з динамічним рендерингом списку авторів контенту (Podcasters, Youtubers, TikTokers тощо) через метод .map().Modal Windowow** — інтерактивне модальне вікно з формою зворотного зв'язку:
+   * Відкриття та закриття за станом isOpen.
+ Автоматичне очищення форми:и:** за допомогою хука useEffect дані полів та помилки валідації скидаються при кожному новому відкритті модалки.
