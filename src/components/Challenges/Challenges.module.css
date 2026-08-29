@@ -1,0 +1,78 @@
+.challenges {
+    background-color: var(--color-bg-header);
+    margin-bottom: 8rem;
+    padding-top: 21.4rem;
+}
+
+.challenges__wrapper {
+    display: flex;
+}
+
+.challenges__content {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.challenges__title {
+    margin-bottom: 2.8rem;
+}
+
+.challenges__list {
+    max-width: 43rem;
+}
+
+.challenges__item {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.challenges__item:last-child {
+    margin-bottom: 0;
+}
+
+.challenges__item img {
+    margin-right: 1.2rem;
+}
+
+.challenges__item p {
+    font-family: var(--font-secondary);
+    font-size: var(--fs-lg);
+}
+
+@media (max-width: 1024px) {
+    .challenges {
+        padding: 0 0 4rem;
+    }
+
+    .challenges__wrapper {
+        flex-direction: column-reverse;
+    }
+    
+    .challenges__content {
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+
+    .challenges__title {
+        text-align: center;
+    }
+
+    .challenges__item { 
+        margin-bottom: 1.6rem;
+    }
+
+    .challenges__item img {
+        width: 1.8rem;
+    }
+
+    .challenges__item p {
+        font-size: var(--fs-body);
+    }
+
+    .challenges__img {
+        margin: 0 auto ;
+    }
+  }

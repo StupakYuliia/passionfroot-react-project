@@ -28,8 +28,12 @@
   --fs-body: 1.6rem;
   --fs-h1-desktop: 9.6rem;
   --fs-h1-mobile: 5rem;
+  --fs-h2-desktop: 6,4rem;
+  --fs-h3-desktop: 4rem;
+  --fs-h3-mobile: 3rem;
   --fs-button: 1.6rem;
   --fs-lg: 2rem;
+
 }
 
 html {
@@ -60,12 +64,29 @@ li a{
   color: var(--color-header-link);
 }
 
+h1 {
+  font-size: var(--fs-h1-desktop);
+}
+
+h2 {
+  font-size: var(--fs-h2-desktop);
+}
+
+h3 {
+  font-size: var(--fs-h3-desktop);
+  font-weight: 400;
+}
+
 .title-hero {
   font-size: var(--fs-h1-desktop);
   font-weight: 400;
 }
 
 @media (max-width: 1024px) {
+  h3 {
+    font-size: var(--fs-h3-mobile);
+  }
+
   .title-hero {
     font-size: var(--fs-h1-mobile);
   }
