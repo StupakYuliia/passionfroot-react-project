@@ -1,6 +1,5 @@
-import classes from '../Challenges/Challenges.module.css'
+import FeatureBlock from '../FeatureBlock/FeatureBlock'
 import crossIcon from '../../assets/img/crossIcon.svg'
-import Image from '../Image/Image'
 import passionfrootCharacterImg from '../../assets/img/passionfroot-character.png'
 
 const challengesData = [
@@ -23,27 +22,11 @@ const challengesData = [
 
 export default function Challenges() {
     return (
-        <section className={classes.challenges}>
-            <div className={`container ${classes.challenges__wrapper}`}>
-                <div className={classes.challenges__content}>
-                    <h3 className={classes.challenges__title}>Is running the show running you down, too?</h3>
-                    <ul className={classes.challenges__list}>
-                        {challengesData.map((item) => (
-                            <li className={classes.challenges__item} key={item.id}>
-                                <img src={item.icon} alt='Cross'/>
-                                <p>{item.text}</p>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-                <div className={classes.challenges__img}>
-                    <Image
-                        src={passionfrootCharacterImg}
-                        alt='A passionfruit character working at a desk with a laptop'
-                        className={classes.challenges__characterPic}
-                    />
-                </div>
-            </div>
-        </section>
+        <FeatureBlock
+            title='Is running the show running you down, too?'
+            items={challengesData}
+            imageSrc={passionfrootCharacterImg}
+            imageAlt='A passionfruit character working at a desk with a laptop'
+        />
     )
 }
