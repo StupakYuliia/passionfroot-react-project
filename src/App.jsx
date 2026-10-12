@@ -4,6 +4,7 @@ import Hero from './components/Hero/Hero'
 import Audience from './components/Audience/Audience'
 import Challenges from './components/Challenges/Challenges'
 import Benefits from './components/Benefits/Benefits'
+import SpritePassionfroot from './components/SpritePassionfroot/SpritePassionfroot'
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Audience/>
         <Challenges/>
         <Benefits/>
+        <SpritePassionfroot/>
       </main>
     </div>
   )  

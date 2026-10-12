@@ -1,0 +1,17 @@
+.animation {
+margin-top: -8rem;
+padding: 2rem 0;
+}
+
+.animation__wrapper {
+    height: 11.3rem;
+    width: 10.6rem;
+    background: url(../../assets/img/sprite.png) 0 0 no-repeat;
+    animation: play-sprite 0.5s steps(8) infinite;
+}
+
+@keyframes play-sprite {
+   to {
+        background-position-y: -90.4rem;
+    }
+}
