@@ -21,18 +21,22 @@
   --color-active: #ff722c;
   --color-header-link: #222;
   --color-bg-header: #F5F3EA;
+  --color-border-light: rgba(27, 28, 29, 0.2);
 
   --font-primary: 'Roboto', sans-serif;
   --font-secondary: 'DM Sans', sans-serif;
   
   --fs-body: 1.6rem;
+  --fs-lg: 2rem;
+  --fs-sm: 1.4rem;
+  --fs-xs: 1.2rem;
   --fs-h1-desktop: 9.6rem;
   --fs-h1-mobile: 5rem;
   --fs-h2-desktop: 6,4rem;
   --fs-h3-desktop: 4rem;
+  --fs-h4-desktop: 2.4rem;
   --fs-h3-mobile: 3rem;
   --fs-button: 1.6rem;
-  --fs-lg: 2rem;
 
 }
 
@@ -74,6 +78,11 @@ h2 {
 
 h3 {
   font-size: var(--fs-h3-desktop);
+  font-weight: 400;
+}
+
+h4 {
+  font-size: var(--fs-h4-desktop);
   font-weight: 400;
 }
 

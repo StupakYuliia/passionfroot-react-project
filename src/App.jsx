@@ -5,6 +5,7 @@ import Audience from './components/Audience/Audience'
 import Challenges from './components/Challenges/Challenges'
 import Benefits from './components/Benefits/Benefits'
 import SpritePassionfroot from './components/SpritePassionfroot/SpritePassionfroot'
+import Resources from './components/Resources/Resources'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Challenges/>
         <Benefits/>
         <SpritePassionfroot/>
+        <Resources/>
       </main>
     </div>
   )  
