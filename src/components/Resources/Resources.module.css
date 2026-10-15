@@ -40,6 +40,7 @@
     width: 100%;
     padding: 23.3rem 2.4rem 10.6rem;
     border-radius: 8px;
+    transition: .3s;
 }
 
 .resources__date {
@@ -84,5 +85,6 @@
     .resources__cards {
         flex-direction: column;
         gap: 32px;
+        align-items: center;
     }
 }

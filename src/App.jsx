@@ -6,6 +6,7 @@ import Challenges from './components/Challenges/Challenges'
 import Benefits from './components/Benefits/Benefits'
 import SpritePassionfroot from './components/SpritePassionfroot/SpritePassionfroot'
 import Resources from './components/Resources/Resources'
+import FaqAccordion from './components/FaqAccordion/FaqAccordion'
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Benefits/>
         <SpritePassionfroot/>
         <Resources/>
+        <FaqAccordion/>
       </main>
     </div>
   )  
